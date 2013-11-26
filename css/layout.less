@@ -1,0 +1,147 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* Styles
+==================================================
+	Image Sizes:
+	880px x 580px
+	430px x 645px
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+@color-mark: #A34E4A;
+@color-a: #664556;
+@color-b: #9D4F4B;
+@color-c: #E36846;
+@color-ecru: #F9EED9;
+@color-mark: #D99C5B;
+
+@import "elements.less";
+
+
+/* #Page Styles
+================================================== */
+
+body {
+	.gradient(@color-ecru, #F3C9B0, @color-ecru);	
+}
+
+a, a:hover {color:@color-b}
+
+section#intro {
+	height: 400px;
+	padding: 50px 0 40px 0;
+}
+
+section.main {
+	min-height: 200px;
+	padding: 50px 0 40px;
+}
+
+#intro{
+	background-image:url('../img/intro.jpg');
+	background-position:center; 
+	background-repeat:no-repeat; 
+	background-size: 100% auto;
+}
+
+#story{
+	background: rgba(157, 79, 75, 0.2);
+}
+
+
+#invite{
+	background: rgba(157, 79, 75, 0.4);
+	form, .button {
+		margin: 0;
+	}
+}
+
+#about {
+	background: rgba(157, 79, 75, 0.6);
+}
+
+#header {
+	.contain-to-grid, .top-bar, .top-bar-section li a:not(.button) {
+		background: @color-a;
+	}
+	.top-bar-section li a:hover{
+		background: @color-c;
+	}
+[data-magellan-expedition] {
+	left: auto !important;
+	padding: 10px 0;
+	background: @color-ecru;
+}
+}
+
+h1 {
+font-family: "Sonsie One";
+color: @color-b;
+}
+
+h2{
+color: @color-a;	
+}
+
+#menu {
+	color: @color-c;
+}
+
+#bean {
+h3,h4 {font-weight: 500;}
+	.small-block-grid-2 i {
+		margin-right: 10px;
+	}
+}
+.clear {
+	clear: left;
+}
+#interact {
+}
+
+#interact .tabs dd > a {
+	padding: 0 !important;
+}
+
+#footer {background: @color-ecru;}
+
+.size-12 { font-size: 12px; }
+
+.size-14 { font-size: 14px; }
+
+.size-16 { font-size: 16px; }
+
+.size-18 { font-size: 18px; }
+
+.size-21 { font-size: 21px; }
+
+.size-24 { font-size: 24px; }
+
+.size-36 { font-size: 36px; }
+
+.size-48 { font-size: 48px; }
+
+.size-60 { font-size: 60px; }
+
+.size-72 { font-size: 72px; }
+
+@media only screen and (min-width: 0px) and (max-width: 1400px) { html {} #intro{background-size: auto 100%;}
+ }
+
